@@ -1,0 +1,48 @@
+.mayor{
+    outline: 10px solid yellow;
+    height: 1000px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    /* wrap ajusta al tamaño
+    nowrap no ajusta, siempre vamos a tener una fila */
+    flex-wrap: nowrap; 
+/* Es un atajo de flex direction y flex wrap */
+    /* flex-flow: row wrap; */
+
+    /* Horizontalmente */
+    justify-content: center; 
+    /* flex-start al inicio  flex-end al final space-between lanza a las orillas y deja un espacio a los lados space-around al final te deja un espacio a los lados*/
+
+    /* verticalmete en una sola fila */
+    /* align-items: center ; */
+
+/* baseline las alarga center centro flex-end abajo flex-start arriba flex-stretch */
+
+/* verticalmete dos o más filas */
+align-content: space-around;
+}
+
+.rojo{
+    background: red;
+    /* Sino especificamos el width con column lanza todo hacia la izquierda de la columna */
+    width: 300px;
+    /* Sino especificamos el height con row lanza todo hacia abajo la columna */
+    height: 300px;
+    /* flex-basis: 200px;
+    flex-grow: 1; */
+}
+
+.verde{
+    background: blue;
+    width: 300px;
+    height: 300px;
+    /* los elementos se vuelven responsive */
+    /* flex-basis: 200px;
+    /* abarca todo el div padre en 1*/
+    /* flex-grow: 2; */ 
+    align-self: center;
+
+}
+
